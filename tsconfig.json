@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "jsx": "react-native",
+      "lib": ["es2017"],
+      "moduleResolution": "node",
+      "noEmit": true,
+      "strict": true,
+      "target": "esnext",
+
+      "skipLibCheck": false,                    /* Skip type checking of declaration files. */
+      "resolveJsonModule": true,             /* Allows importing modules with a ‘.json’ extension, which is a common practice in node projects. */
+       
+      "baseUrl": "./", /* Base directory to resolve non-absolute module names. */
+      "paths": { // A series of entries which re-map imports to lookup locations relative to the 'baseUrl'
+        "*":["src/*"],
+        "@assets":["src/assets/*"],
+        "@components":["src/components/*"],
+        "@configures":["src/configures/*"],
+        "@features":["src/features/*"],
+        "@navigation":["src/navigation/*"],
+        "@stores":["src/stores/*"],
+        "@theme":["src/theme/*"],
+        "@utils":["src/utils/*"],
+      },  
+      
+    },
+
+    "exclude": [
+      "node_modules",
+      "babel.config.js",
+      "metro.config.js",
+      "jest.config.js"
+    ]
+  }
+  
